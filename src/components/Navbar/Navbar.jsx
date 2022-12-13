@@ -35,10 +35,10 @@ const Navbar = () => {
         <div
           className={`${
             showHamburgerMenu ? "hidden" : ""
-          } m-1 flex flex-row md:hidden`}
+          } flex flex-row md:hidden`}
         >
           <div
-            className="hover:bg-gray-200 hover:cursor-pointer flex ring-offset-4 w-12 h-12 rounded-full items-center justify-center relative"
+            className="m-1 hover:bg-gray-200 hover:cursor-pointer flex ring-offset-4 w-12 h-12 rounded-full items-center justify-center relative"
             onClick={onHamburgerClick}
           >
             <HamburgerIcon className="w-6 h-6 ring-offset-4" />
