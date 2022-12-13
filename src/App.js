@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
-    <div>
+    <div className=" w-screen h-screen bg-gray-50">
       <Navbar />
     </div>
   );

@@ -47,8 +47,8 @@ const Navbar = () => {
         <div
           className={
             !showHamburgerMenu
-              ? "opacity-0 w-0"
-              : `w-80 absolute h-screen md:hidden rounded-tr-2xl rounded-br-2xl transition-width duration-250 ease-in-out`
+              ? "opacity-0 w-0 h-0"
+              : ` bg-white w-80 absolute h-screen md:hidden rounded-tr-2xl rounded-br-2xl transition-width duration-250 ease-in-out`
           }
         >
           <div className="m-1 flex flex-row md:hidden">
@@ -63,7 +63,7 @@ const Navbar = () => {
             <NavbarLongButton
               children={item.icon}
               text={item.text}
-              className={item.className}
+              className={item.className + ` ${!showHamburgerMenu ? " hidden" : ""}`}
               selected={item.menuButtonType === selectedMenuItem}
               onMenuItemClick={onMenuItemClick}
               menuButtonType={item.menuButtonType}
